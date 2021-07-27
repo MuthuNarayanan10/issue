@@ -3,6 +3,7 @@ import axios from "axios";
 import { ip } from "./constant.js";
 
 import { withRouter } from "react-router-dom";
+import { endpoints } from "../api/endpoints.js";
 
 const CheckBox = (props) => (
   <label className="select-course black sub ">
@@ -145,7 +146,7 @@ class Register extends React.Component {
     };
 
     axios
-      .post("/api/form", data)
+      .post(`${endpoints.baseUrl}/api/form`, data)
       .then((res) => {
         this.setState(
           {
