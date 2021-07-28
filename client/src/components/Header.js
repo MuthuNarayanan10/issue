@@ -124,12 +124,12 @@ export default function Header() {
                   About
                 </Link>
               </li>
-              <li className="nav-item drop-down-menu">
+              <li className="nav-item web-drop-down-menu">
                 <Link to="/course" className="nav-link">
                   Courses
                 </Link>
                 <ul>
-                  <li>1</li>
+                  <li>123</li>
                 </ul>
               </li>
               <li className="nav-item">
