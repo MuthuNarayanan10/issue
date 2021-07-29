@@ -21,8 +21,10 @@ export default class XRLearning extends Component {
                     </div>
                 </div>
                 <div className="sections">
-                    <h2 className="mb-75 mt-100">XR Learning</h2>
+                    <h2 className="mb-75 mt-10">XR Learning</h2>
                     <div className="list-box">
+                    <div className="row">
+                   <div className="col-12">
                         <div className="aboutus-top-sections">
 
 
@@ -31,7 +33,8 @@ export default class XRLearning extends Component {
                                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JXP_hrFuTLc" allowfullscreen></iframe>
                                 </div>
                             </div>
-
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <br></br>

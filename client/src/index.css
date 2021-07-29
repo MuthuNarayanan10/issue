@@ -1549,5 +1549,17 @@ ul.small-device-ul a:hover {
   .overlay {
        --gradient-width: 40px !important;
   }
- 
+ .courses{
+  margin-top: 70px !important;
+ }
+ .advance {
+  margin-top: 93px !important;
+ }
+ .cources h2 {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+.h2.mb-75.mt-100 {
+   margin-top: 5px !important;
+}
 }
