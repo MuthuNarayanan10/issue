@@ -267,7 +267,7 @@ a:hover {
 }
 .sections p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
 }
 .aboutpara {
   font-size: 1vw !important;
@@ -915,6 +915,7 @@ button:focus {
 ul.footer-nav.m-auto {
   width: 100%;
   display: flex;
+  list-style-type: none;
   justify-content: center;
 }
 ul.footer-nav a {
@@ -1121,7 +1122,7 @@ ul.footer-nav a {
   .team-container {
     display: flex;
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -1165,6 +1166,7 @@ ul.footer-nav a {
   }
   ul.footer-nav.m-auto {
     flex-direction: column;
+    list-style-type: none;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -1296,6 +1298,7 @@ ul.footer-nav a {
   }
   ul.footer-nav.m-auto {
     flex-direction: column;
+    list-style-type: none;
     justify-content: center;
     align-items: center;
   }
@@ -1353,12 +1356,12 @@ ul.footer-nav a {
   border-radius: 4px;
 }
 
-.image-container1 {
+ .image-container1 {
   border: 10px solid;
   border-image-slice: 1 !important;
   border-width: 5px;
   border-image-source: linear-gradient(to top, #00d1ff, #fda50f);
-}
+} 
 
 .mapclass {
   width: 722px;
@@ -1394,7 +1397,7 @@ a:focus {
 
 @media only screen and (min-width: 556px) {
   .aboutpara {
-    margin: 32px -24px -10px -24px;
+    margin: 8px -24px -10px -24px;
   }
 }
 
@@ -1540,4 +1543,11 @@ ul.small-device-ul a:hover {
   transition: all 0.2s linear 0s;
   opacity: 0.5s;
   color: black;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .overlay {
+       --gradient-width: 40px !important;
+  }
+ 
 }
