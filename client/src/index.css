@@ -1511,3 +1511,33 @@ a:focus {
   .dropclass{
 font-size: 12px !important;
   }
+/* for mobile/desktop responsive */
+.small-screen-header {
+  display: block !important; 
+}
+.large-screen-header {
+  display: none !important;  
+}
+
+@media (min-width: 768px) {
+  .small-screen-header {
+    display: none !important;  
+  }
+  .large-screen-header {
+    display: block !important;    
+  }
+  .drop-down-menu ul {
+    position: none !important; 
+     height: none !important; 
+  }
+}
+.drop-down-menu ul.small-device-ul {
+  position: unset !important; height: 75px !important
+}
+ul.small-device-ul a:hover {
+  background-color: #ffe299;
+  border-radius: 50px;
+  transition: all 0.2s linear 0s;
+  opacity: 0.5s;
+  color: black;
+}

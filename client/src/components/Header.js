@@ -8,18 +8,17 @@ import mail from "../assests/mail.png";
 import call from "../assests/call.png";
 import icon from "../assests/icon.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
-export const isMobileOrWeb = () => {
-  const width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-
-  if (width > 767) {
-    return false;
-  } else {
-    return true;
-  }
-};
+// export const isMobileOrWeb = () => {
+//   const width =
+//     window.innerWidth ||
+//     document.documentElement.clientWidth ||
+//     document.body.clientWidth;
+//   if (width > 767) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// };
 export default function Header() {
   const [toggle, setToggle] = useState(false);
   return (
@@ -63,20 +62,20 @@ export default function Header() {
             {" "}
             <img src={logo} className="log" />
           </Navbar.Brand>
-          {isMobileOrWeb() && (
-            <>
+          {/* {isMobileOrWeb() && (
+            <> */}
               {" "}
-              <div className="hamburger">
+              <div className="hamburger small-screen-header">
                 <Navbar.Toggle
                   aria-controls="basic-navbar-nav"
                   className="navbar-toggler"
                 />
               </div>
-              <div className="mobile-menu">
+              <div className="mobile-menu small-screen-header">
                 <Navbar.Collapse
                   id="basic-navbar-nav"
                   className="collapse navbar-collapse"
-                >
+                  >
                   <Nav className="ml-auto">
                     <ul className="navbar-nav">
                       <li className="nav-item">
@@ -85,10 +84,10 @@ export default function Header() {
                         </Link>
                       </li>
                       <li className="nav-item drop-down-menu">
-                        <Link to="/course" className="nav-link">
+                        <Link to="/" className="nav-link">
                           Courses
                         </Link>
-                        <ul>
+                        <ul className="small-device-ul">
                           <Link to="/course" className="nav-link">
                             <span className="dropclass">DATASCIENCE</span>
                           </Link>
@@ -115,15 +114,16 @@ export default function Header() {
                     </ul>
                   </Nav>
                 </Navbar.Collapse>
-              </div>
-            </>
+              </div>       
+            {/* </>
           )}
           {!isMobileOrWeb() && (
-            <Navbar.Collapse
+            */}
+           <Navbar.Collapse
               id="basic-navbar-nav"
               className="collapse navbar-collapse"
-            >
-              <Nav className="ml-auto">
+              >
+              <Nav className="ml-auto large-screen-header">
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link to="/aboutus" className="nav-link">
@@ -161,7 +161,7 @@ export default function Header() {
                 </ul>
               </Nav>
             </Navbar.Collapse>
-          )}{" "}
+          {/* )}{" "} */}
         </Container>
       </Navbar>
     </div>
