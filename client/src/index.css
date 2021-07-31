@@ -1327,7 +1327,7 @@ ul.footer-nav a {
 
 @media only screen and (min-device-width: 411px) {
   .contents h1 {
-    margin-top: 5px;
+    margin-top: 25px;
   }
 
   .xr-content {
@@ -1795,12 +1795,21 @@ ul.small-device-ul a:hover {
  }
 }
 /* Portrait*/
-/* @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .small-screen-header {
-      display: block !important;
- }
-  .large-screen-header {
-      display: none !important;
- }
-} */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .navbar-nav {
+    margin: 8px -36px -33px -115px !important;
+}
+.homepage .contents::after {right: -561px;}
+.contents h1 {
+  margin-top: -247px;
+  margin-left: 41px;
+}
+.contents a {
+ 
+  margin-left: 41px;
+}
+.class-room{
+  padding-top: 59px;
+}
+}
 
