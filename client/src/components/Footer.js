@@ -21,14 +21,15 @@ export default class Footer extends Component {
                                 <li class="list-inline-item"><a href="https://www.instagram.com/develearn.institute/"><img className="logo-img" src={instagram} /></a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 contactus-class">
                             <h4>Contact Us At : 088502 99596</h4>
                             <h4>Toll-Free number : 18002102989</h4>
                             <h4>Address : 472/22, Mohan Nivas, 1st Floor, Opposite Maheshwari Udyan,
                                 King's Circle, Matunga (C.R.), Mumbai, Maharashtra 400019</h4>
                         </div>
                     </div>
-                    <div className="row content-section mt-70">
+                    <br/>
+                    <div className="row content-section">
                         <ul className="footer-nav m-auto">
                             <li className="nav-item">
                                 <Link to="/aboutus" className="nav-link">ABOUT</Link>

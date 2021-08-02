@@ -4,7 +4,6 @@ import Footer from './Footer'
 
 
 export default class Confirm extends React.Component {
-   
     verifypage = (e) => {
         this.props.history.push('/Thanks');
     }

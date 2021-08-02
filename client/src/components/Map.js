@@ -4,10 +4,12 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 function Map() {
   return (
     <div>
+       <div className="row">
+       <div className="col-12">
       <MapContainer
         center={[19.7515, 75.7139]}
         zoom={6}
-        scrollWheelZoom={false}
+        scrollWheelZoom={false} className="map-height"
       >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -41,6 +43,8 @@ function Map() {
           <Popup><a  href="https://www.bmncollege.com/">BMN college</a></Popup>
         </Marker>
       </MapContainer>
+    </div>
+    </div>
     </div>
   );
 }

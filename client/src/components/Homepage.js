@@ -71,11 +71,7 @@ import Map from './Map'
                 <div className="sections">
                     <div className="short-content">
                         <h2 className="mb-75">Collaborative Institute Map</h2>
-                        <div className="image-container1 text-center ">
-                   
                      <Map/>
-                     
-                        </div>
                     </div>
                 </div>
                 <div className="sections">
