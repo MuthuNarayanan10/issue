@@ -16,7 +16,7 @@ import bannerImage from "./../people700.png";
                     <div className="content-section">
                         <div className="NavContainer">
                             <Header />
-                            <div class="d-flex justify-content-between">
+                            <div class="d-md-flex justify-content-between">
                                 <div className="contents advance">
                                     <h1><span>Advance</span> your career </h1>
                                     <a href="#" class="custom-btn pa black learn">Learn More</a>
